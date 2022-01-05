@@ -1,0 +1,12 @@
+--- charts-original/Chart.yaml
++++ charts/Chart.yaml
+@@ -8,3 +8,8 @@
+   name: kastenIO
+ name: k10
+ version: 4.5.6
++kubeVersion: ">= 1.17"
++annotations:
++  catalog.cattle.io/certified: partner # Enables the "partner" badge in the UI for easier identification
++  catalog.cattle.io/release-name: k10 # Your chart's name in kebab-case, this is used for deployment
++  catalog.cattle.io/display-name: kasten/k10 # The chart's name you want displayed in the UI
+\ No newline at end of file

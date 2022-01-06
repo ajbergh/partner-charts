@@ -1966,6 +1966,26 @@ entries:
     urls:
     - assets/k8s-triliovault-operator/k8s-triliovault-operator-v2.0.200.tgz
     version: v2.0.200
+  k10:
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: kasten/k10
+      catalog.cattle.io/release-name: k10
+    apiVersion: v2
+    appVersion: 4.5.6
+    created: "2022-01-06T19:20:15.210750565+05:30"
+    description: Kasten’s K10 Data Management Platform
+    digest: 84ccfbd1a3f9b3fb0d8e76ffd9a5f0d0b94acde5c840d8b83acccc217d34311d
+    home: https://kasten.io/
+    icon: https://docs.kasten.io/_static/kasten.png
+    kubeVersion: '>= 1.17'
+    maintainers:
+    - email: support@kasten.io
+      name: kastenIO
+    name: k10
+    urls:
+    - assets/k10/k10-4.5.600.tgz
+    version: 4.5.600
   kong:
   - annotations:
       catalog.cattle.io/certified: partner

@@ -1,0 +1,9 @@
+questions:
+# Declare variables to be passed into your templates.
+- variable: rbac.create
+  label: Role
+  description: "Whether to enable RBAC with a specific cluster role and binding for K10"
+  type: boolean
+  required: false
+  default: "true"
+  group: "Role Management"

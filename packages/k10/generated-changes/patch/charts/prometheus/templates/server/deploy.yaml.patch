@@ -1,0 +1,14 @@
+--- charts-original/charts/prometheus/templates/server/deploy.yaml
++++ charts/charts/prometheus/templates/server/deploy.yaml
+@@ -160,9 +160,9 @@
+     {{- if .Values.server.dnsPolicy }}
+       dnsPolicy: {{ .Values.server.dnsPolicy }}
+     {{- end }}
+-    {{- if .Values.global.imagePullSecret }}
++    {{- if .Values.imagePullSecrets }}
+       imagePullSecrets:
+-        - name: {{ .Values.global.imagePullSecret }}
++{{ toYaml .Values.imagePullSecrets | indent 8 }}
+     {{- end }}
+     {{- if .Values.server.nodeSelector }}
+       nodeSelector:

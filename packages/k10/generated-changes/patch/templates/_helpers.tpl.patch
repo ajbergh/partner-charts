@@ -1,0 +1,12 @@
+--- charts-original/templates/_helpers.tpl
++++ charts/templates/_helpers.tpl
+@@ -575,9 +575,3 @@
+ {{ fail "The Prometheus name overrides must match. Please check values of prometheus.server.fullnameOverride and grafana.prometheusName" }}
+ {{- end -}}
+ {{- end -}}
+-
+-{{- define "check.validateImagePullSecrets" -}}
+-{{ if and (not .Values.global.imagePullSecret) (or .Values.secrets.dockerConfig .Values.secrets.dockerConfigPath )}}
+-{{ fail "Provide secret name if custom docker config is provided. Please check value of global.imagePullSecret" }}
+-{{- end -}}
+-{{- end -}}

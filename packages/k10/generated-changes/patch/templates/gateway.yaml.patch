@@ -1,0 +1,11 @@
+--- charts-original/templates/gateway.yaml
++++ charts/templates/gateway.yaml
+@@ -97,7 +97,7 @@
+       serviceAccountName: {{ template "serviceAccountName" . }}
+ {{- if or .Values.secrets.dockerConfig .Values.secrets.dockerConfigPath }}
+       imagePullSecrets:
+-        - name: {{ .Values.global.imagePullSecret }}
++        - name: k10-ecr
+ {{- end }}
+       containers:
+       - name: ambassador

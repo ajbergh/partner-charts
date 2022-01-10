@@ -1,0 +1,10 @@
+--- charts-original/README.md
++++ charts/README.md
+@@ -73,7 +73,6 @@
+ `global.persistence.metering.size` | Size of a volume for metering service  | `global.persistence.size`
+ `global.persistence.storageClass` | Specified StorageClassName will be used for PVCs | `None`
+ `global.airgapped.repository` | Specify the helm repository for offline (airgapped) installation | `''`
+-`global.imagePullSecret` | Provide secret which contains docker config for private repository. | `''`
+ `secrets.awsAccessKeyId` | AWS access key ID (required for AWS deployment) | `None`
+ `secrets.awsSecretAccessKey` | AWS access key secret | `None`
+ `secrets.awsIamRole` | ARN of the AWS IAM role assumed by K10 to perform any AWS operation. | `None`

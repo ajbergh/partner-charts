@@ -1,0 +1,13 @@
+--- charts-original/templates/_k10_template.tpl
++++ charts/templates/_k10_template.tpl
+@@ -76,9 +76,8 @@
+ {{ toYaml .Values.services.securityContext | indent 8 }}
+       serviceAccountName: {{ template "serviceAccountName" . }}
+ {{- if or .Values.secrets.dockerConfig .Values.secrets.dockerConfigPath }}
+-{{- include "check.validateImagePullSecrets" .}}
+       imagePullSecrets:
+-        - name: {{ .Values.global.imagePullSecret }}
++        - name: k10-ecr
+ {{- end }}
+ {{- /* initContainers: */}}
+ {{- (dict "main" . "k10_pod" $service | include "k10-init-container-header") }}

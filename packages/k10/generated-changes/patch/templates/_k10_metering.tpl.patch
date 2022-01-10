@@ -1,0 +1,11 @@
+--- charts-original/templates/_k10_metering.tpl
++++ charts/templates/_k10_metering.tpl
+@@ -102,7 +102,7 @@
+       serviceAccountName: {{ template "meteringServiceAccountName" . }}
+ {{- if or .Values.secrets.dockerConfig .Values.secrets.dockerConfigPath }}
+       imagePullSecrets:
+-        - name: {{ .Values.global.imagePullSecret }}
++        - name: k10-ecr
+ {{- end }}
+ {{- if $.stateful }}
+       initContainers:

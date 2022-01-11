@@ -17,6 +17,22 @@ questions:
   required: false
   group: "Storage Management"
 
+- variable: prometheus.server.persistentVolume.enabled
+  type: boolean
+  label: PVS for prometheus server
+  description: "If true, K10 Prometheus server will create a Persistent Volume Claim"
+  default: true
+  required: false
+  group: "Storage Management"
+
+- variable: global.persistence.enabled
+  type: boolean
+  label: Storage Enabled
+  description: "Use PVS to persist data"
+  default: true
+  required: false
+  group: "Storage Management"
+
 ### Service Account
 
 - variable: serviceAccount.name

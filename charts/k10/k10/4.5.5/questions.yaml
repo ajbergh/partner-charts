@@ -1,10 +1,29 @@
 questions:
-# Declare variables to be passed into your templates.
-- variable: rbac.create
-  label: Role
-  description: "Whether to enable RBAC with a specific cluster role and binding for K10"
-  type: boolean
+### Storage Management
+
+- variable: global.persistence.storageClass
+  label: StorageClass Name
+  description: "Specified StorageClassName will be used for PVCs"
+  type: string
   required: false
-  default: "true"
-  group: "Role Management"
-  
+  default: ""
+  group: "Storage Management"
+
+- variable: prometheus.server.persistentVolume.storageClass
+  type: string
+  label: StorageClass Name for prometheus PVC
+  description: "StorageClassName used to create Prometheus PVC. Setting this option overwrites global StorageClass value"
+  default: ""
+  required: false
+  group: "Storage Management"
+
+### Service Account
+
+- variable: serviceAccount.name
+  description: "Name of a service account in the target namespace that has cluster-admin permissions. This is needed for the K10 to be able protect cluster resources."
+  type: string
+  label: Service Account Name
+  required: false
+  default: ""
+  group: "Service Account"
+

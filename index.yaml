@@ -1855,6 +1855,28 @@ entries:
       catalog.cattle.io/display-name: TrilioVault for Kubernetes Operator
       catalog.cattle.io/release-name: k8s-triliovault-operator
     apiVersion: v1
+    appVersion: 2.6.6
+    created: "2022-01-12T18:30:01.203743912Z"
+    description: K8s-TrilioVault-Operator is an operator designed to manage the K8s-TrilioVault
+      Application Lifecycle.
+    digest: eedd4a4abfd9c33b87ac07ba1c2dd97c30743f31bd449fe4196e84a0d5fc22a4
+    home: https://github.com/trilioData/k8s-triliovault-operator
+    icon: https://www.trilio.io/wp-content/uploads/2021/01/Trilio-2020-logo-RGB-gray-green.png
+    kubeVersion: '>=1.18.0-0'
+    maintainers:
+    - email: prafull.ladha@trilio.io
+      name: prafull11
+    name: k8s-triliovault-operator
+    sources:
+    - https://github.com/trilioData/k8s-triliovault-operator
+    urls:
+    - assets/k8s-triliovault-operator/k8s-triliovault-operator-2.6.600.tgz
+    version: 2.6.600
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: TrilioVault for Kubernetes Operator
+      catalog.cattle.io/release-name: k8s-triliovault-operator
+    apiVersion: v1
     appVersion: 2.6.5
     created: "2022-01-10T12:32:26.501820339Z"
     description: K8s-TrilioVault-Operator is an operator designed to manage the K8s-TrilioVault
@@ -2023,6 +2045,45 @@ entries:
     urls:
     - assets/k8s-triliovault-operator/k8s-triliovault-operator-v2.0.200.tgz
     version: v2.0.200
+  k10:
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: K10
+      catalog.cattle.io/release-name: k10
+    apiVersion: v2
+    appVersion: 4.5.7
+    created: "2022-01-20T19:54:52.919765686+05:30"
+    description: Kasten’s K10 Data Management Platform
+    digest: d22d5ab8249c4ed1b49824a158021f702d3179129a8f16fbffc1ef2a4a12c387
+    home: https://kasten.io/
+    icon: https://docs.kasten.io/_static/kasten-logo-vertical.png
+    kubeVersion: '>= 1.17'
+    maintainers:
+    - email: support@kasten.io
+      name: kastenIO
+    name: k10
+    urls:
+    - assets/k10/k10-4.5.7.tgz
+    version: 4.5.7
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: K10
+      catalog.cattle.io/release-name: k10
+    apiVersion: v2
+    appVersion: 4.5.6
+    created: "2022-01-14T13:48:12.740063952+05:30"
+    description: Kasten’s K10 Data Management Platform
+    digest: d28412fed5387d13d5b9073174a6262b44e63f971906c7669f7e82ecdb621e3f
+    home: https://kasten.io/
+    icon: https://docs.kasten.io/_static/kasten-logo-vertical.png
+    kubeVersion: '>= 1.17'
+    maintainers:
+    - email: support@kasten.io
+      name: kastenIO
+    name: k10
+    urls:
+    - assets/k10/k10-4.5.6.tgz
+    version: 4.5.6
   kong:
   - annotations:
       catalog.cattle.io/certified: partner

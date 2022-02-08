@@ -41,4 +41,22 @@ questions:
   label: Service Account Name
   required: false
   default: ""
-  group: "Service Account"
+  group: "Service Account!"
+
+### Options for AWS
+
+- variable: secrets.awsAccessKeyId
+  label: awsAccessKeyId
+  description: "AWS access key ID (required for AWS deployment)"
+  type: string
+  required: false
+  default: ""
+  group: "AWS EKS"
+  
+- variable: secrets.awsSecretAccessKey
+  label: awsSecretAccessKey
+  description: "AWS access key secret (required for AWS deployment)"
+  type: string
+  required: false
+  default: ""
+  group: "AWS EKS"
